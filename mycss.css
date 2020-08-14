@@ -87,10 +87,13 @@ em{
     em {
         font-size: 1rem;
     }
+    h4{
+        font-size: 1em;
+    }
 }
 
 /* Portrait and Landscape */
-@media 
+@media screen and
   (min-device-width: 800px) 
   and (max-device-width: 1280px) {
 
@@ -99,6 +102,6 @@ em{
         box-sizing: 100vh;  
     }
     em {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
