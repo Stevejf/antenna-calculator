@@ -16,7 +16,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-shadow: 1px 1px rgb(165, 41, 202);
+    
     font-weight: 540;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -26,7 +26,6 @@ em{
 }
 .container{
     width: auto;
-    height: auto;
     max-width: 900px;
     padding: 20px 30px;
     border-radius: 10px;
@@ -35,7 +34,7 @@ em{
  }
 
  #calc-btn{
-     color: black;
+     color: white;
      border: 5px ridge grey;
      outline: none;
      background-color: #2a2391 ;
@@ -44,7 +43,7 @@ em{
  }
 
  #reset-btn{
-     color: black;
+     color: white;
      border:  5px ridge grey;
      outline: none;
      background-color:#2a2391 ;
@@ -76,14 +75,30 @@ em{
     text-align: center;
  }
 
-@media screen and (device-width: 640px){
-    .container{
-        margin: 0px auto;
-        box-sizing: border-box;
-        width: 100vh;
-        height: 200vh;
-        padding-left: 10px ;
-       
-    }
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
 
+    .container{
+        margin: auto 10px;  
+    }
+    em {
+        font-size: 1rem;
+    }
+}
+
+/* Portrait and Landscape */
+@media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1280px) {
+
+    .container{
+        margin: auto 10px;
+        box-sizing: 100vh;  
+    }
+    em {
+        font-size: 1.5rem;
+    }
 }
